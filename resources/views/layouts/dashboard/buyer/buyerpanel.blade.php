@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.6 -->
+  <link rel="stylesheet" href="{{ URL::asset('assets/dashboard/bootstrap/css/bootstrap.min.css') }}">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="{{ URL::asset('assets/dashboard/dist/css/AdminLTE.min.css') }}">
+  
+  <link rel="stylesheet" href="{{ URL::asset('assets/dashboard/dist/css/skins/skin-yellow-light.min.css') }}">
+
+  
+</head>
+
+<body class="hold-transition skin-yellow-light sidebar-mini">
+<div class="wrapper">
+
+  <!-- Main Header -->
+  <header class="main-header">
+
+    <!-- Logo -->
+    <a href="index2.html" class="logo">
+      <!-- mini logo for sidebar mini 50x50 pixels -->
+      <span class="logo-mini"><b>A</b>LT</span>
+      <!-- logo for regular state and mobile devices -->
+      <span class="logo-lg"><b>Admin</b>LTE</span>
+    </a>
+
+    <!-- Header Navbar -->
+    <nav class="navbar navbar-static-top" role="navigation">
+      <!-- Sidebar toggle button-->
+      <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+        <span class="sr-only">Toggle navigation</span>
+      </a>
+      <!-- Navbar Right Menu -->
+      <div class="navbar-custom-menu">
+        
+      </div>
+    </nav>
+  </header>
+  <!-- Left side column. contains the logo and sidebar -->
+  <aside class="main-sidebar">
+
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+
+      <!-- Sidebar user panel (optional) -->
+     
+
+      <!-- Sidebar Menu -->
+      <ul class="sidebar-menu">
+        
+        <!-- Optionally, you can add icons to the links -->
+        <li><a href="{{ URL::to('/') }}"><i class="fa fa-home"></i> <span>Home</span></a></li>
+        <li class="treeview">
+          <a href="#"><i class="fa fa-user"></i> <span>Manage Profile</span> <i class="fa fa-angle-left pull-right"></i></a>
+          <ul class="treeview-menu">
+             <li><a href="{{ URL::to('/') }}"><i class="fa fa-circle-o"></i> Contact Information</a></li>
+            <li><a href="{{ URL::to('/') }}"><i class="fa fa-circle-o"></i> Company Profile</a></li>
+            
+          </ul>
+        </li>
+        <li class="treeview">
+          <a href="#"><i class="fa fa-plane"></i> <span>Manage Travel</span> <i class="fa fa-angle-left pull-right"></i></a>
+          <ul class="treeview-menu">
+            <li><a href="{{ URL::to('/') }}"><i class="fa fa-circle-o"></i> Passport Detail</a></li>
+            <li><a href="{{ URL::to('/') }}"><i class="fa fa-circle-o"></i> Travel Itinerary</a></li>
+			<li><a href="{{ URL::to('/') }}"><i class="fa fa-circle-o"></i> Hotel Information</a></li>
+            
+          </ul>
+        </li>
+		<li class="treeview">
+          <a href="#"><i class="fa fa-edit"></i> <span>Enquiry Form</span> <i class="fa fa-angle-left pull-right"></i></a>
+          <ul class="treeview-menu">
+             <li><a href="{{ URL::to('/') }}"><i class="fa fa-circle-o"></i> Place Enquiry</a></li>
+            
+            
+          </ul>
+        </li>
+		 <li><a href="{{ URL::to('/logout') }}"><i class="fa fa-sign-out "></i> <span>Logout</span></a></li>
+      </ul>
+      <!-- /.sidebar-menu -->
+    </section>
+    <!-- /.sidebar -->
+  </aside>
+
+  @yield('content')
+
+  <!-- Main Footer -->
+  <footer class="main-footer">
+    <!-- To the right -->
+    <div class="pull-right hidden-xs">
+      Created & Maintained by <a href="http://www.regalinfonet.com/" target="_blank">Regal InfoNet</a>
+    </div>
+    <!-- Default to the left -->
+    <strong>Copyright &copy; <a href="#">Source India</a>.</strong> All rights reserved.
+  </footer>
+  
+</div>
+<!-- ./wrapper -->
+
+<!-- REQUIRED JS SCRIPTS -->
+
+<!-- jQuery 2.2.0 -->
+<script src="{{ URL::asset('assets/dashboard/plugins/jQuery/jQuery-2.2.0.min.js') }}"></script>
+<!-- Bootstrap 3.3.6 -->
+<script src="{{ URL::asset('assets/dashboard/bootstrap/js/bootstrap.min.js') }}"></script>
+<!-- AdminLTE App -->
+<script src="{{ URL::asset('assets/dashboard/dist/js/app.min.js') }}"></script>
+
+<!-- Optionally, you can add Slimscroll and FastClick plugins.
+     Both of these plugins are recommended to enhance the
+     user experience. Slimscroll is required when using the
+     fixed layout. -->
+</body>
+</html>

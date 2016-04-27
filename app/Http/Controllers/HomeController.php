@@ -1,0 +1,25 @@
+<?php
+namespace App\Http\Controllers;
+use Illuminate\Foundation\Bus\DispatchesJobs;
+use Illuminate\Routing\Controller as BaseController;
+use Illuminate\Support\Facades\View;
+use Input;
+use Session; 
+use Redirect; 
+use Validator;
+use Request;
+use URL;
+use Response;
+use DB;
+class HomeController extends BaseController {
+
+public function index()
+    {
+       $exibitors = DB::select('SELECT u.*, e.* FROM users u
+								LEFT JOIN eb_userexibitor e
+								ON e.user_id = u.id
+								WHERE user_type="E"');
+       return view('home')->with('exibitors',$exibitors);;
+    }
+}
+?>

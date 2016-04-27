@@ -1,0 +1,289 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+ @media (min-width:767px) { 
+.carousel {
+    width:100%;
+	height:70%;
+	
+}
+.carousel-inner .item img {
+    width:100%;
+	height:100%;
+}
+}
+
+
+
+.carousel-control .icon-prev:before {
+    content: url('http://localhost/UIDocintosh/assets/img/slider/slider-left-arrow.png');
+}
+
+.carousel-control .icon-next:before {
+    content: url('http://localhost/UIDocintosh/assets/img/slider/slider-right-arrow.png');
+}
+
+
+
+
+.navbar {
+  border-radius:0px;
+}
+.navbar ul a {
+  text-transform:uppercase;
+}
+.navbar ul a:hover {
+    color: orange !important; 
+	text-transform:uppercase;
+}
+nav.navbar {
+  border-bottom:2px solid orange;
+}
+
+
+
+#myCarousel {
+  margin-top:-20px;
+}
+
+img.logo-img {
+   margin-top:10px;
+   margin-bottom:10px;
+   height:70px;
+   width:200px;
+}
+
+@media (max-width:767px) {
+   img.logo-img {
+   margin-top:10px;
+   margin-bottom:10px;
+   margin-left:20px;
+   height:70px;
+   width:200px;
+}
+}
+
+footer {
+  padding: 20px;
+  background-color:black;
+  color:white;
+}
+footer a {
+  color:white;
+}
+
+footer a:hover {
+  color:orange;
+  text-decoration:none;
+}
+
+.copy {
+  font-size:12pt;
+  margin-top:20px;
+}
+.designer {
+  color:orange;
+}
+
+.designer:hover {
+  color:orange;
+  text-decoration:none;
+}
+@media (min-width:1200px) {
+.side-link {
+  margin-top:10px;
+  margin-left:700px;
+}
+}
+
+@media (min-width:1000px) {
+.side-link {
+  margin-top:30px;
+  margin-left:600px;
+}
+}
+
+@media (max-width:768px) {
+.side-link {
+  margin-top:10px;
+  margin-left: 40px;
+  margin-bottom: 10px;
+}
+}
+
+.top-link {
+  color:black;
+}
+
+.top-link:hover {
+  color:black;
+  text-decoration:none;
+  border-bottom:2px solid orange;
+}
+
+@media (min-width:768px) {
+.pull-right  {
+  margin-top:30px;
+}
+
+.event-img {
+  height:150px;
+  width:150px;
+}
+}
+
+#content {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.siderHeader {
+   background-color: orange;
+   padding:10px;
+   color:white;
+}
+
+.divider {
+  margin-top:3px;
+  border-bottom:1px solid orange;
+}
+
+.black-diveider {
+  border-bottom:1px solid lightgray; 
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+@media (max-width:900px) {
+.bottom-black-diveider {
+  border-bottom:1px solid lightgray; 
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+}
+.bottom-black-diveider {
+  display:none;
+}
+
+
+.download-link li {
+margin-top:-10px;
+margin-left:-30px;
+display: block;  
+}
+
+
+/*
+ *  STYLE 4
+ */
+
+.scrollbar
+{
+	margin-left: 30px;
+	float: left;
+	height: 220px;
+	width: 100%;
+	background: #FFFFF;
+	overflow-y: scroll;
+	margin-bottom: 25px;
+}
+
+.force-overflow
+{
+	
+}
+
+#wrapper
+{
+	text-align: center;
+	width: 500px;
+	margin: auto;
+}
+
+#style-4::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+#style-4::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+#style-4::-webkit-scrollbar-thumb
+{
+	background-color: orange;
+	border: 2px solid orange;
+}
+
+#style-4  {
+  margin-left:-2px;
+  margin-left::1px;
+}
+
+.call-icon {
+  color:white;
+  background-color:orange;
+  font-size:20pt;
+  padding:10px;
+  padding-left:12.5px;
+  padding-right:12px;
+  border-radius:100%;
+}
+.envelope-icon {
+  color:white;
+  background-color:orange;
+  font-size:20pt;
+  padding:10px;
+  border-radius:100%;
+}
+.call-no {
+  font-size:12pt;
+  margin-top:7px;
+  margin-left:5px;
+  border:1px solid orange;
+  padding:5px;
+}
+
+.right-inner-addon {
+    position: relative;
+}
+.right-inner-addon input {
+    padding-right: 30px;    
+}
+.right-inner-addon i {
+    position: absolute;
+    right: 0px;
+    padding: 10px 12px;
+     cursor:pointer;
+}
+.download-link li a {
+  color: #0066cc;
+}
+
+.right-logo {
+   width:300px;
+}
+
+@media (max-width:767px) {
+  .right-logo {
+   width:250px;
+}
+}
+
+@media (min-width:767px) {
+.right-top-link {
+  margin-top:-10px;
+}
+}
+.fa-search {
+  cursor:pointer;
+}
+
+.right-top-text:hover {
+    text-decoration: none;
+}
+
+.exibitors tr {
+   cursor:pointer;
+}
+
